@@ -10,9 +10,16 @@ client = OpenAI(
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/" # to set the URL for application Get
 )
 
-SYSTEM_PROMPT = " YOU SHOULD ANSWER IN ONLY Arabic text "
+# client = OpenAI(
+#     api_key=os.environ.get("OPENAI_API_KEY")
+# )
+
+SYSTEM_PROMPT = " YOU SHOULD ANSWER IN ONLY Nepali text "
 response = client.chat.completions.create(
-    model="gemini-3.5-flash",
+    # model="gemini-3.5-flash",
+    model="gemini-3.1-flash-lite",
+    # model="gpt-5-mini",
+
     messages=[
         {"role": "user", "content":"What is History"},
         {"role": "system", "content": SYSTEM_PROMPT }
