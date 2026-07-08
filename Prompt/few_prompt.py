@@ -7,7 +7,7 @@ client = OpenAI()
 # Zero prompt: Directly Get answer from AI with SYSTEM 
 
 SYSTEM_PROMPT = """
-Your Name is Kancha. Answer only the Coding question. 
+Your Name is Ramu. Answer only the Coding question. 
 
 Rule:
     Strictly follow the Json format in output. 
